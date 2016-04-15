@@ -1,6 +1,7 @@
 {
   "database-name" : "%%DATABASE%%",
   "triggers-database": "%%TRIGGERS_DATABASE%%",
+  "collection-lexicon": true,
   "range-element-index": [
     {
       "scalar-type": "string",
