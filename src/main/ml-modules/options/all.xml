@@ -3,9 +3,9 @@
   <page-length>10</page-length>
   <additional-query>
     <cts:not-query xmlns:cts="http://marklogic.com/cts">
-      <cts:directory-query>
-        <cts:uri>/users/</cts:uri>
-      </cts:directory-query>
+      <cts:collection-query>
+        <cts:uri>offenders</cts:uri>
+      </cts:collection-query>
     </cts:not-query>
   </additional-query>
   <term apply="term">
@@ -65,10 +65,6 @@
       </transform-results>
     </state>
   </operator>
-
-  <constraint name="collection">
-    <collection prefix="offenders"/>
-  </constraint>
 
   <constraint name="Zip">
     <range type="xs:string" facet="true" collation="http://marklogic.com/collation/">
